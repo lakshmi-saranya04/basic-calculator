@@ -1,0 +1,86 @@
+[4:27 PM, 25/2/2022] Thondapu Lakshmi Saranya😎: import java.util.Scanner;
+public class Diamond
+{
+    public static void main(String args[]) 
+    {
+        int n, i, j, space = 1;
+        System.out.print("Enter the number of rows: ");
+        Scanner s = new Scanner(System.in);
+        n = s.nextInt();
+        space = n - 1;
+        for (j = 1; j <= n; j++) 
+        {
+            for (i = 1; i <= space; i++) 
+            {
+                System.out.print(" ");
+            }
+            space--;
+            for (i = 1; i <= 2 * j - 1; i++) 
+            {
+                System.out.print("*");                
+            }
+            System.out.println("");
+        }
+        space = 1;
+        for (j = 1; j <= n - 1; j++) 
+        {
+            for (i = 1; i <= space; i++) 
+            {
+                System.out.print(" ");
+            }
+            space++;
+            for (i = 1; i <= 2 * (n - j) - 1; i++) 
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+}
+[4:28 PM, 25/2/2022] Thondapu Lakshmi Saranya😎: public class StringFormatter {  
+public static String reverseWord(String str){  
+    String words[]=str.split("\\s");  
+    String reverseWord="";  
+    for(String w:words){  
+        StringBuilder sb=new StringBuilder(w);  
+        sb.reverse();  
+        reverseWord+=sb.toString()+" ";  
+    }  
+    return reverseWord.trim();  
+}  
+}
+[4:29 PM, 25/2/2022] Thondapu Lakshmi Saranya😎: import java.util.ArrayList;
+import java.util.List;
+ 
+// Main class
+public class GFG {
+    // Main driver method
+    public static void main(String[] args)
+    {
+        // Creating an object of List interface with
+        // reference to ArrayList class
+        List<Integer> al = new ArrayList<>();
+ 
+        // Adding elements to our ArrayList
+        // using add() method
+        al.add(10);
+        al.add(20);
+        al.add(30);
+        al.add(1);
+        al.add(2);
+ 
+        // Printing the current ArrayList
+        System.out.println(al);
+ 
+        // This makes a call to remove(int) and
+        // removes element 20
+        al.remove(1);
+ 
+        // Now element 30 is moved one position back
+        // So element 30 is removed this time
+        al.remove(1);
+ 
+        // Printing the updated ArrayList
+        System.out.println(al);
+    }
+}
